@@ -4,10 +4,16 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* let num1 = Number(prompt("Inserisci un numero", "ad es. 1, 2, 3..."))
-let num2 = Number(prompt("Inserisci un altro numero", "ad es. 1, 2, 3..."))
+/* let val1 = Number(prompt("Inserisci un numero", "ad es. 1, 2, 3..."))
+let val2 = Number(prompt("Inserisci un altro numero", "ad es. 1, 2, 3..."))
 
-console.log("Il numero più grande è" + " " + Math.max(num1, num2)) */
+if(val1 > val2) {
+  console.log(val1 + " è maggiore di " + val2)
+} else if(val1 < val2) {
+  console.log(val1 + " è minore di " + val2)
+} else {
+  console.log(val1 + " è uguale a " + val2)
+} */
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -15,11 +21,11 @@ console.log("Il numero più grande è" + " " + Math.max(num1, num2)) */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* let num = Number(prompt("Inserisci un numero intero", "ad es. 1, 2, 3, 5..."))
+let number = Number(prompt("Inserisci un numero intero", "ad es. 1, 2, 3, 5..."))
 
-if(num !== 5) {
+if(number !== 5) {
   console.log("not equal")
-} */
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
@@ -27,7 +33,7 @@ if(num !== 5) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num = 20
+let num = Number(prompt("Inserisci"))
 
 if(num % 5 === 0) {
   console.log("Il numero " + num + " è divisibile per 5")
@@ -72,7 +78,7 @@ if(totalShoppingCart > 50) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let discount 
+let discount = 20
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -170,9 +176,9 @@ if(valoreNum % 2 === 0) {
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let val = 7
-  if (val < 10) {
+  if (val < 5) {
       console.log("Meno di 10");
-    } else if (val < 5) {
+    } else if (val < 10) {
       console.log("Meno di 5");
     } else {
       console.log("Uguale a 10 o maggiore");
@@ -202,13 +208,15 @@ console.log(me)
 
 delete me.lastName
 
+console.log(me)
+
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+me.skills.pop()
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
