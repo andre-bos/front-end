@@ -123,7 +123,7 @@ for(let i = 0; i < starWarsCharacters.length; i++) {
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 
-/* let femaleCharacters = []
+let femaleCharacters = []
 
 for(let i = 0; i < starWarsCharacters.length; i++) {
   if(starWarsCharacters[i].gender === 'female') {
@@ -131,7 +131,7 @@ for(let i = 0; i < starWarsCharacters.length; i++) {
   }
 }
 
-console.log(femaleCharacters) */
+console.log(femaleCharacters)
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
@@ -203,14 +203,46 @@ console.log("La massa totale è " + crewMass)
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 
+
+
+if(crewMass > 1000) {
+  console.log("DANGER! OVERLOAD ALERT: escape from ship now!")
+} else if (crewMass > 900) {
+  console.log("Critical Load: Over 900")
+} else if (crewMass > 700) {
+  console.log("Warning: Load is over 700")
+} else if (crewMass > 500) {
+  console.log("Ship is half loaded")
+} else if(crewMass < 500) {
+  console.log("Ship is underloaded")
+} else {
+  console.log("La massa è OK")
+}
+
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+
+for(c = 0; c < starWarsCharacters.length; c++) {
+  if(starWarsCharacters[c].gender === 'n/a') {
+    starWarsCharacters[c].gender = 'robot'
+    console.log(starWarsCharacters[c].gender)
+  }
+}
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
+
+for(c2 = 0; c2 < femaleCharacters.length; c2++) {
+  let femaleNames = femaleCharacters[c2].name
+  let newFemaleCharacters = []
+  newFemaleCharacters.push(femaleNames)
+  console.log(newFemaleCharacters)
+
+  let compare = characters.filter(femaleCharacters)
+}
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
