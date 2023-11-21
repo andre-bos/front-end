@@ -132,7 +132,13 @@
         La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
      */
  
-       const generateTable = function () {}
+       const generateTable = function () {
+        let tabella = document.querySelector('#tableArea')
+        console.log(tabella)
+        tabella.innerHTML = '<h5>Questa è bella</h5>'
+       }
+
+       generateTable()
  
        /* ESERCIZIO 12
         Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
@@ -150,10 +156,21 @@
        Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
      */
  
-       const changeColorWithRandom = function () {}
+       const changeColorWithRandom = function () {
+        let combinazioniHex = '0123456789ABCDEF' // 16 caratteri
+        console.log(combinazioniHex.length)
+        let dash = '#'
+
+        for(let i = 0; i<6; i++) {
+            dash += combinazioniHex[Math.floor(Math.random() * combinazioniHex.length)]
+        }
+
+        return document.getElementById('changeMyColor').style.color = dash
+       }
  
        /* EXTRA ESERCIZIO 16
        Crea una funzione che elimini le vocali da ogni elemento testuale della pagina (puoi aiutarti con i nuovi metodi degli array di ES6)
      */
  
-       const deleteVowels = function () {}
+       const deleteVowels = function () {
+       }

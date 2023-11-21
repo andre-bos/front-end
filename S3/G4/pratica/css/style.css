@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #0E0B1D;
+    color: white;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #17192B;
+}
+
+#tabellone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+#tabellone div {
+    width: 5%;
+    padding: .2em .5em;
+    margin: .5em .75em;
+    border-radius: 33px;
+}
+
+button {
+    display: block;
+    font-weight: inherit;
+    color: inherit;
+    padding: .5em 1.75em;
+    cursor: pointer;
+    border-radius: 28px;
+    margin: 1em auto;
+    background: #952aff;
+    border: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.numero-estratto {
+    background-color: #952aff;
+}
