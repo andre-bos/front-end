@@ -1,0 +1,64 @@
+/* La proprietà float ha come valore di default NONE, che può essere modificato in left o right. */
+
+#box-1 {
+    float: left;
+    background: red;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+#box-2 {
+   /*  display: inline-block; */
+   float: left;
+    background: green;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+#box-3 {
+    /* display: inline-block; */
+    float: left;
+    background: blue;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+article {
+    width: 750px;
+    margin: 0 auto;
+}
+
+footer {
+    clear: both;
+    background: black;
+    padding: 10px;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer img {
+    width: 100px;
+    margin: 10px 20px;
+    float: left;
+}
+
+/* POSITION: static è il comportamento di default
+POSITION: relative */
+
+section {
+    width: 810px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+#pos {
+    background: violet;
+    width: 100px;
+    height: 100px;
+    clear: both;
+}
